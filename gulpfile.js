@@ -15,3 +15,5 @@ gulp.task('default', function() {
     console.log(err);
   });
 })
+
+gulp.start('default');
