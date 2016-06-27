@@ -10,6 +10,7 @@ gulp.task('default', function() {
     dest: '/home/alexandrt/'
   }))
   .on('error', function(err) {
+    console.log('-----------------SOME ERROR OCCUR-----------------');
     console.log(err);
   });
 })
