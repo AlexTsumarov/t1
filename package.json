@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulp.js",
   "scripts": {
-    "deploy": "gulp default",
+    "deploy": "gulp default"
   },
   "author": "",
   "license": "ISC",
