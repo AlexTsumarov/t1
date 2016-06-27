@@ -1,13 +1,15 @@
 var gulp = require('gulp');
-var scp = require('gulp-scp');
+var scp = require('gulp-scp2');
  
-gulp.task('default', function () {
-    gulp.src('README.md')
-        .pipe(scp({
-            host: 'nl-wag-epam01.meteogroup.net',
-            user: 'alexandrt',
-            password: 'AleTsu2016',
-            port: 22,
-            path: '~/dir'
-        }));
-});
+gulp.task('default', function() {
+  return gulp.src('README.md')
+  .pipe(scp({
+    host: 'nl-wag-epam01.meteogroup.net',
+    username: 'alexandrt',
+    password: 'AleTsu2016',
+    dest: '/home/alexandrt/'
+  }))
+  .on('error', function(err) {
+    console.log(err);
+  });
+})
