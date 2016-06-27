@@ -3,7 +3,7 @@ var scp = require('gulp-scp2');
  
 console.log('-----------------DEBUG-----------------');
 gulp.task('default', function() {
-  return gulp.src('**')
+  return gulp.src('README.md')
   .pipe(scp({
     host: 'nl-wag-epam01.meteogroup.net',
     username: 'alexandrt',
