@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var scp = require('gulp-scp2');
  
+console.log('-----------------DEBUG-----------------');
 gulp.task('default', function() {
   return gulp.src('**')
   .pipe(scp({
